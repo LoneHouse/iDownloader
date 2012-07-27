@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30006D6515C27337003D0B2B /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D5F15C27337003D0B2B /* Downloader.m */; };
+		30006D6615C27337003D0B2B /* DownloadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D6115C27337003D0B2B /* DownloadPool.m */; };
+		30006D6715C27337003D0B2B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D6415C27337003D0B2B /* Reachability.m */; };
+		30006D6915C273CB003D0B2B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30006D6815C273CB003D0B2B /* CFNetwork.framework */; };
+		30006D6B15C273ED003D0B2B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30006D6A15C273ED003D0B2B /* SystemConfiguration.framework */; };
+		308A8BFD15418A6400E07A14 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308A8BFC15418A6400E07A14 /* AddressBook.framework */; };
+		308FE6C3153D960B007A0E39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308FE6C2153D960B007A0E39 /* UIKit.framework */; };
+		308FE6C5153D960B007A0E39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308FE6C4153D960B007A0E39 /* Foundation.framework */; };
+		308FE6C7153D960B007A0E39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308FE6C6153D960B007A0E39 /* CoreGraphics.framework */; };
+		308FE6CD153D960B007A0E39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 308FE6CB153D960B007A0E39 /* InfoPlist.strings */; };
+		308FE6CF153D960B007A0E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 308FE6CE153D960B007A0E39 /* main.m */; };
+		308FE6D3153D960B007A0E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 308FE6D2153D960B007A0E39 /* AppDelegate.m */; };
+		308FE6DE153D9698007A0E39 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 308FE6DC153D9698007A0E39 /* MainViewController.m */; };
+		308FE6DF153D9698007A0E39 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 308FE6DD153D9698007A0E39 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		30006D5D15C27337003D0B2B /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
+		30006D5E15C27337003D0B2B /* Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Downloader.h; sourceTree = "<group>"; };
+		30006D5F15C27337003D0B2B /* Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Downloader.m; sourceTree = "<group>"; };
+		30006D6015C27337003D0B2B /* DownloadPool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadPool.h; sourceTree = "<group>"; };
+		30006D6115C27337003D0B2B /* DownloadPool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadPool.m; sourceTree = "<group>"; };
+		30006D6315C27337003D0B2B /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		30006D6415C27337003D0B2B /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		30006D6815C273CB003D0B2B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		30006D6A15C273ED003D0B2B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		308A8BFC15418A6400E07A14 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		308FE6BE153D960B007A0E39 /* iDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		308FE6C2153D960B007A0E39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		308FE6C4153D960B007A0E39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		308FE6C6153D960B007A0E39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		308FE6CA153D960B007A0E39 /* iDownloader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iDownloader-Info.plist"; sourceTree = "<group>"; };
+		308FE6CC153D960B007A0E39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		308FE6CE153D960B007A0E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		308FE6D0153D960B007A0E39 /* iDownloader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iDownloader-Prefix.pch"; sourceTree = "<group>"; };
+		308FE6D1153D960B007A0E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		308FE6D2153D960B007A0E39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		308FE6DB153D9698007A0E39 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		308FE6DC153D9698007A0E39 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		308FE6DD153D9698007A0E39 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		308FE6BB153D960B007A0E39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30006D6B15C273ED003D0B2B /* SystemConfiguration.framework in Frameworks */,
+				30006D6915C273CB003D0B2B /* CFNetwork.framework in Frameworks */,
+				308A8BFD15418A6400E07A14 /* AddressBook.framework in Frameworks */,
+				308FE6C3153D960B007A0E39 /* UIKit.framework in Frameworks */,
+				308FE6C5153D960B007A0E39 /* Foundation.framework in Frameworks */,
+				308FE6C7153D960B007A0E39 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30006D5B15C27337003D0B2B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				30006D5C15C27337003D0B2B /* Downloader */,
+				30006D6215C27337003D0B2B /* Reachability */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		30006D5C15C27337003D0B2B /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				30006D5D15C27337003D0B2B /* DownloadDelegate.h */,
+				30006D5E15C27337003D0B2B /* Downloader.h */,
+				30006D5F15C27337003D0B2B /* Downloader.m */,
+				30006D6015C27337003D0B2B /* DownloadPool.h */,
+				30006D6115C27337003D0B2B /* DownloadPool.m */,
+			);
+			path = Downloader;
+			sourceTree = "<group>";
+		};
+		30006D6215C27337003D0B2B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				30006D6315C27337003D0B2B /* Reachability.h */,
+				30006D6415C27337003D0B2B /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		308FE6B3153D960B007A0E39 = {
+			isa = PBXGroup;
+			children = (
+				30006D6A15C273ED003D0B2B /* SystemConfiguration.framework */,
+				30006D6815C273CB003D0B2B /* CFNetwork.framework */,
+				308A8BFC15418A6400E07A14 /* AddressBook.framework */,
+				308FE6C8153D960B007A0E39 /* iDownloader */,
+				308FE6C1153D960B007A0E39 /* Frameworks */,
+				308FE6BF153D960B007A0E39 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		308FE6BF153D960B007A0E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				308FE6BE153D960B007A0E39 /* iDownloader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		308FE6C1153D960B007A0E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				308FE6C2153D960B007A0E39 /* UIKit.framework */,
+				308FE6C4153D960B007A0E39 /* Foundation.framework */,
+				308FE6C6153D960B007A0E39 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		308FE6C8153D960B007A0E39 /* iDownloader */ = {
+			isa = PBXGroup;
+			children = (
+				308FE6E0153D96B0007A0E39 /* classes */,
+				308FE6DB153D9698007A0E39 /* MainViewController.h */,
+				308FE6DC153D9698007A0E39 /* MainViewController.m */,
+				308FE6DD153D9698007A0E39 /* MainViewController.xib */,
+				308FE6D1153D960B007A0E39 /* AppDelegate.h */,
+				308FE6D2153D960B007A0E39 /* AppDelegate.m */,
+				308FE6C9153D960B007A0E39 /* Supporting Files */,
+			);
+			path = iDownloader;
+			sourceTree = "<group>";
+		};
+		308FE6C9153D960B007A0E39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				308FE6CA153D960B007A0E39 /* iDownloader-Info.plist */,
+				308FE6CB153D960B007A0E39 /* InfoPlist.strings */,
+				308FE6CE153D960B007A0E39 /* main.m */,
+				308FE6D0153D960B007A0E39 /* iDownloader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		308FE6E0153D96B0007A0E39 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				30006D5B15C27337003D0B2B /* Sources */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		308FE6BD153D960B007A0E39 /* iDownloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 308FE6D6153D960B007A0E39 /* Build configuration list for PBXNativeTarget "iDownloader" */;
+			buildPhases = (
+				308FE6BA153D960B007A0E39 /* Sources */,
+				308FE6BB153D960B007A0E39 /* Frameworks */,
+				308FE6BC153D960B007A0E39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iDownloader;
+			productName = iDownloader;
+			productReference = 308FE6BE153D960B007A0E39 /* iDownloader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		308FE6B5153D960B007A0E39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 308FE6B8153D960B007A0E39 /* Build configuration list for PBXProject "iDownloader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 308FE6B3153D960B007A0E39;
+			productRefGroup = 308FE6BF153D960B007A0E39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				308FE6BD153D960B007A0E39 /* iDownloader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		308FE6BC153D960B007A0E39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308FE6CD153D960B007A0E39 /* InfoPlist.strings in Resources */,
+				308FE6DF153D9698007A0E39 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		308FE6BA153D960B007A0E39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308FE6CF153D960B007A0E39 /* main.m in Sources */,
+				308FE6D3153D960B007A0E39 /* AppDelegate.m in Sources */,
+				308FE6DE153D9698007A0E39 /* MainViewController.m in Sources */,
+				30006D6515C27337003D0B2B /* Downloader.m in Sources */,
+				30006D6615C27337003D0B2B /* DownloadPool.m in Sources */,
+				30006D6715C27337003D0B2B /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		308FE6CB153D960B007A0E39 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				308FE6CC153D960B007A0E39 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		308FE6D4153D960B007A0E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		308FE6D5153D960B007A0E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		308FE6D7153D960B007A0E39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDownloader/iDownloader-Prefix.pch";
+				INFOPLIST_FILE = "iDownloader/iDownloader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		308FE6D8153D960B007A0E39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iDownloader/iDownloader-Prefix.pch";
+				INFOPLIST_FILE = "iDownloader/iDownloader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		308FE6B8153D960B007A0E39 /* Build configuration list for PBXProject "iDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308FE6D4153D960B007A0E39 /* Debug */,
+				308FE6D5153D960B007A0E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		308FE6D6153D960B007A0E39 /* Build configuration list for PBXNativeTarget "iDownloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				308FE6D7153D960B007A0E39 /* Debug */,
+				308FE6D8153D960B007A0E39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 308FE6B5153D960B007A0E39 /* Project object */;
+}
