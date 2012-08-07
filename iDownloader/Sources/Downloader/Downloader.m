@@ -62,14 +62,14 @@ static dispatch_queue_t queue;
 			
 		}
 		//create connection from url
-		self.urlConnection=[[[NSURLConnection alloc] initWithRequest:request delegate:self] autorelease];
+		self.urlConnection=[[NSURLConnection alloc] initWithRequest:request delegate:self];
 		if (!self.urlConnection) {
 			NSString *errorText=[NSString stringWithFormat:@"Could not create URL connnection: %@",self.downloadURL];
 			callDelegateMethodWithParameters(didDownloadFailed:withError:, self, errorText);
 			return;
 		}
 		
-		self.downloadedData=[[[NSMutableData alloc]init] autorelease];
+		self.downloadedData=[[NSMutableData alloc]init];
 		
 		//start download at new thread
 		dispatch_async(queue, ^{
@@ -136,13 +136,4 @@ static dispatch_queue_t queue;
     self.isFinished=YES;
 }
 
--(void) dealloc {
-    [super dealloc];
-    [downloadURL release];
-    [urlConnection release];
-    [delegate release];
-    [downloadedData release];
-    [urlResponse release];
-    [downloadFileName release];
-}
 @end

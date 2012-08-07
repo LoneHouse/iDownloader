@@ -13,6 +13,14 @@
 
 static int tagCounter=0;
 
++ (DownloadPool *)downloadPool
+{
+	static dispatch_once_t once;
+	static DownloadPool *downloadManager;
+	dispatch_once(&once, ^ { downloadManager = [[DownloadPool alloc] init]; });
+	return downloadManager;
+}
+
 -(id)init{
     self=[super init];
     if(self){
@@ -42,7 +50,7 @@ static int tagCounter=0;
 	}
     //start download
     [newDownloader startDownload];
-    return [newDownloader autorelease];
+    return newDownloader;
 }
 
 -(void)cancelAllDownloads{
@@ -74,8 +82,4 @@ static int tagCounter=0;
     }
 }
 
--(void)dealloc{
-    [super dealloc];
-    [pool release];
-}
 @end

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		30006D6515C27337003D0B2B /* Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D5F15C27337003D0B2B /* Downloader.m */; };
 		30006D6615C27337003D0B2B /* DownloadPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D6115C27337003D0B2B /* DownloadPool.m */; };
-		30006D6715C27337003D0B2B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D6415C27337003D0B2B /* Reachability.m */; };
+		30006D6715C27337003D0B2B /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 30006D6415C27337003D0B2B /* Reachability.m */; settings = {COMPILER_FLAGS = ""; }; };
 		30006D6915C273CB003D0B2B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30006D6815C273CB003D0B2B /* CFNetwork.framework */; };
 		30006D6B15C273ED003D0B2B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30006D6A15C273ED003D0B2B /* SystemConfiguration.framework */; };
 		308A8BFD15418A6400E07A14 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 308A8BFC15418A6400E07A14 /* AddressBook.framework */; };
@@ -290,6 +290,7 @@
 		308FE6D7153D960B007A0E39 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDownloader/iDownloader-Prefix.pch";
 				INFOPLIST_FILE = "iDownloader/iDownloader-Info.plist";
@@ -302,6 +303,7 @@
 		308FE6D8153D960B007A0E39 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iDownloader/iDownloader-Prefix.pch";
 				INFOPLIST_FILE = "iDownloader/iDownloader-Info.plist";

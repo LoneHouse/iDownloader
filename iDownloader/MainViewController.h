@@ -13,6 +13,6 @@
 
 -(IBAction)buttonPress:(id)sender;
 
-@property(retain, nonatomic)IBOutlet UIImageView* imgView;
+@property( nonatomic)IBOutlet UIImageView* imgView;
 
 @end

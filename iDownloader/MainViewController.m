@@ -82,7 +82,7 @@ DownloadPool *downloadPool;
     NSString *sandBoxPath = [documentsDirectory stringByDeletingLastPathComponent];
     NSError *error;
     [downloaderInst.downloadedData writeToFile:[NSString stringWithFormat:@"%@/Documents/%@",sandBoxPath,downloaderInst.downloadFileName] options:NSDataWritingFileProtectionNone error:&error];
-    self.imgView.image = [[[UIImage alloc]initWithData:downloaderInst.downloadedData] autorelease];
+    self.imgView.image = [[UIImage alloc]initWithData:downloaderInst.downloadedData];
     
     NSLog(@"Loading finished. File saved to %@/Documents/%@",sandBoxPath,downloaderInst.downloadFileName);
 }
