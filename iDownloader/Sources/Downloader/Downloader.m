@@ -73,6 +73,7 @@ static dispatch_queue_t queue;
 		
 		//start download at new thread
 		dispatch_async(queue, ^{
+			isFinished=NO;
 			[self.urlConnection start];
 			NSLog(@"endThread");
 		});

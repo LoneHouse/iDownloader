@@ -11,12 +11,12 @@
 #import "Reachability.h"
 
 @interface Downloader : NSObject <NSURLConnectionDelegate>
-@property ( nonatomic) NSString* downloadURL;
-@property ( nonatomic) id<DownloadDelegate> delegate;
-@property ( nonatomic) NSURLConnection* urlConnection;
-@property ( nonatomic) NSMutableData* downloadedData;
-@property ( nonatomic) NSURLResponse* urlResponse;
-@property ( nonatomic) NSString* downloadFileName;
+@property (retain, nonatomic) NSString* downloadURL;
+@property (retain, nonatomic) id<DownloadDelegate> delegate;
+@property (retain, nonatomic) NSURLConnection* urlConnection;
+@property (retain, nonatomic) NSMutableData* downloadedData;
+@property (retain, nonatomic) NSURLResponse* urlResponse;
+@property (retain, nonatomic) NSString* downloadFileName;
 @property (nonatomic) BOOL isFinished;
 @property(nonatomic,assign) int tag;
 

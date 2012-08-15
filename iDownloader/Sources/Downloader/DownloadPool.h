@@ -10,7 +10,7 @@
 #import "Downloader.h"
 
 @interface DownloadPool : NSObject
-@property ( nonatomic) NSMutableArray* pool;
+@property (retain, nonatomic) NSMutableArray* pool;
 -(Downloader*) addNewDownloadFromURL:(NSString*) url withDelegate:(id<DownloadDelegate>) delegate;
 -(void) cancelAllDownloads;
 -(void) cancelDownloadByURL:(NSString*) url;
